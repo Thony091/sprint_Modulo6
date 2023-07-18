@@ -63,7 +63,7 @@
 			</div>
 			<div class="row ">
 				<div class="col d-flex justify-content-around">
-        			<a class="btn btn-success" href="${pageContext.request.contextPath}/capacitacion/new" ><i class="mx-1 fa-solid fa-plus"></i>Solicitar Nueva Capacitación</a>
+        			<a class="btn btn-success" href="${pageContext.request.contextPath}/capacitacion/new" ><i class="mx-1 fa-solid fa-plus"></i>Ingresar Nueva Capacitación</a>
         		</div>
 			</div>
 			

@@ -30,12 +30,12 @@ public class CapacitacionController {
 		return new ModelAndView("listar-capacitaciones", "capacitaciones", capacitaciones);
 	}
 	
-//	@RequestMapping(value = "/capacitacion/save", method = RequestMethod.POST)
-//	public String saveTraining(HttpServletRequest request) {
-//		
-//	    cs.saveTrainings(); 
-//	    return "redirect:/capacitaciones"; // Redirigir al usuario a la lista de capacitaciones
-//	}
+	@RequestMapping(value = "/capacitacion/save", method = RequestMethod.POST)
+	public String saveTraining(Capacitacion capacitacion) {
+		
+	    cs.saveTrainings(capacitacion); 
+	    return "redirect:/capacitaciones"; // Redirigir al usuario a la lista de capacitaciones
+	}
 	
 	
 	

@@ -33,7 +33,7 @@ public class Pago implements Serializable{
 	public void prePersist() {
 		createAt = new Date();
 	}
-
+	
 	public int getId() {
 		return id;
 	}

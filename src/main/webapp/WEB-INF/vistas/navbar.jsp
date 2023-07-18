@@ -14,8 +14,8 @@
             Usuario
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item disabled" href="${pageContext.request.contextPath}/usuarios">Listar Usuarios</a></li>
-            <li><a class="dropdown-item disabled" href="${pageContext.request.contextPath}/usuarios/new">Crear Usuarios</a></li>
+            <li><a class="dropdown-item disabled" href="${pageContext.request.contextPath}/listar-usuarios">Listar Usuarios</a></li>
+            <li><a class="dropdown-item disabled" href="${pageContext.request.contextPath}/createForm">Crear Usuarios</a></li>
           <!-- <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Something else here(sin Servicio)</a></li>   -->
           </ul>

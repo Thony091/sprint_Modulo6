@@ -34,6 +34,15 @@
 						<a href="${pageContext.request.contextPath}/contacto" class="btn btn-primary d-grid gap-2">Contacto</a>							
 					</div>						
 				</div>
+				
+				<div class="card col-xs-12 col-sm-6 col-md-3" >
+					<img src="https://cdn-icons-png.flaticon.com/512/306/306232.png" class="card-img-top" alt="Celular con carta de mensaje">
+					<div class="card-body">							
+						<p class="card-text">Administración de usuarios.</p>
+						<a href="${pageContext.request.contextPath}/listar-usuarios" class="btn btn-primary d-grid gap-2">Listar Usuarios</a>							
+						<a href="${pageContext.request.contextPath}/createForm" class="btn btn-primary d-grid gap-2 mt-3">Crear Usuarios</a>							
+					</div>						
+				</div>
 					
 				<div class="card col-xs-12 col-sm-6 col-md-3" >
 					<img src="https://media.gettyimages.com/id/1269452744/es/vector/lista-de-verificaci%C3%B3n-portapapeles-e-icono-de-l%C3%A1piz-dise%C3%B1o-plano-sobre-fondo-blanco.jpg?s=612x612&w=gi&k=20&c=FwNYmm4Bpsn07BCOUNo37yr1EWwT68mNBy_nYZV5Ee0=" class="card-img-top" alt="escritorio con hojas y checks">
@@ -41,6 +50,27 @@
 						<p class="card-text">Programa tu capacitación. </p> 							
 						<a href="${pageContext.request.contextPath}/capacitacion/new" class="btn btn-primary d-grid gap-2">Crear Capacitacion</a>
 						<a href="${pageContext.request.contextPath}/capacitaciones" class="btn btn-primary d-grid gap-2 mt-3">Listar Capacitaciones</a>
+					</div>
+				</div>
+				<div class="card col-xs-12 col-sm-6 col-md-3" >
+					<img src="https://c8.alamy.com/compes/jbfe98/moderno-metodo-de-pago-tarjeta-de-credito-icono-app-pago-financiero-ilustracion-vectorial-de-la-transaccion-con-tarjeta-de-credito-y-el-terminal-jbfe98.jpg" class="card-img-top" alt="escritorio con hojas y checks">
+					<div class="card-body">							
+						<p class="card-text">Registro de Pagos</p> 							
+						<a href="${pageContext.request.contextPath}/pagos/listar-pagos" class="btn btn-primary d-grid gap-2 mt-3">Listar Pagos</a>
+					</div>
+				</div>
+				<div class="card col-xs-12 col-sm-6 col-md-3" >
+					<img src="https://www.enel.cl/content/dam/enel-cl/es/personas/informacion-de-utilidad/tecnicos-en-terreno/P-IU-PersonalTerreno-TecnicoLector-500x500-20SEP.png" class="card-img-top" alt="escritorio con hojas y checks">
+					<div class="card-body">							
+						<p class="card-text">Registro de Visitas a terreno</p> 							
+						<a href="${pageContext.request.contextPath}/listar-visitas" class="btn btn-primary d-grid gap-2 mt-3">Listar Visitas</a>
+					</div>
+				</div>
+				<div class="card col-xs-12 col-sm-6 col-md-3" >
+					<img src="https://www.enel.cl/content/dam/enel-cl/es/personas/informacion-de-utilidad/tecnicos-en-terreno/P-IU-PersonalTerreno-TecnicoLector-500x500-20SEP.png" class="card-img-top" alt="escritorio con hojas y checks">
+					<div class="card-body">							
+						<p class="card-text">Registro de Revisiones de Visitas</p> 							
+						<a href="${pageContext.request.contextPath}/revisiones" class="btn btn-primary d-grid gap-2 mt-3">Listar Revisiones</a>
 					</div>
 				</div>
 					

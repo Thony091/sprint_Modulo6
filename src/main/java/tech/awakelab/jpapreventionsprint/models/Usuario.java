@@ -17,8 +17,6 @@ import javax.persistence.TemporalType;
 @Entity
 @Table(name="usuarios")
 public class Usuario implements Serializable{
-	
-
 
 	@Id
 	@Column(name="id_usuario")
@@ -40,6 +38,19 @@ public class Usuario implements Serializable{
 	@Temporal(TemporalType.DATE)
 	private Date createAt;
 	
+	
+//	public Usuario(int id, String usuario, String password, String run, String fechaNacimiento, String nombre,
+//			String apellido, String tipoUsuario, java.sql.Date createAt) {
+//		this.usuario = usuario;
+//		this.password = password;
+//		this.run = run;
+//		this.fechaNacimiento = fechaNacimiento;
+//		this.nombre = nombre;
+//		this.apellido = apellido;
+//		this.tipoUsuario = tipoUsuario;
+//		this.createAt = createAt;
+//	}
+
 	@PrePersist //antes de persistir la info en la bd se crea la fecha
 	public void prePersist() {
 		createAt = new Date();

@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -27,9 +28,14 @@ public class Contacto implements Serializable{
 	private String email;
 	private String asunto;
 	private String mensaje;	
+	
+	@ManyToOne
+	private Cliente cliente;	
+	
 	@Column(name="create_at")
 	@Temporal(TemporalType.DATE)
 	private Date createAt;
+	
 	
 	@PrePersist //antes de persistir la info en la bd se crea la fecha
 	public void prePersist() {

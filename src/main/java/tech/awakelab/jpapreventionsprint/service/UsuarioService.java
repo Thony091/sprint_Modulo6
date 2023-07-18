@@ -1,6 +1,7 @@
 package tech.awakelab.jpapreventionsprint.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,4 +27,7 @@ public class UsuarioService {
 		return usuarioRepository.findAll();
 	}
 	
+	public Optional<Usuario> findById(int id) {
+		return usuarioRepository.findById(id);
+	}
 }

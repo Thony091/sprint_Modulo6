@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.PrePersist;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
@@ -23,8 +25,7 @@ public class Capacitacion implements Serializable{
 	@Column(name="id")
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
-	@Column(name="rut_cliente")
-	private String rutCliente;
+
 	@Column(name="dia")
 	private String dia;
 	@Column(name="hora")
@@ -35,7 +36,12 @@ public class Capacitacion implements Serializable{
 	private String duracion;
 	@Column(name="cantidad_asistentes")
 	private int cantidadAsistentes;
-	@Column(name="create_at")
+	
+	@ManyToOne
+	@JoinColumn(name="cap_cliente")
+	private Cliente cliente;
+	
+	@Column(name="create_at")	
 	@Temporal(TemporalType.DATE)
 	private Date createAt;
 	
@@ -44,12 +50,21 @@ public class Capacitacion implements Serializable{
 		createAt = new Date();
 	}
 	
+	
+	public Cliente getCliente() {
+		return cliente;
+	}
+
+
+	public void setCliente(Cliente cliente) {
+		this.cliente = cliente;
+	}
+
+
 	public int getId() {
 		return id;
 	}
-	public String getRutCliente() {
-		return rutCliente;
-	}
+
 	public String getDia() {
 		return dia;
 	}
@@ -66,9 +81,6 @@ public class Capacitacion implements Serializable{
 		return cantidadAsistentes;
 	}
 
-	public void setRutCliente(String rutCliente) {
-		this.rutCliente = rutCliente;
-	}
 	public void setDia(String dia) {
 		this.dia = dia;
 	}
