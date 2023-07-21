@@ -6,7 +6,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"  rel="stylesheet">
-		<title>Crear Capacitación</title>
+		<title>Crear Pago</title>
 		<link rel="stylesheet" href="<core:url value="/res/css/styles.css" />">
 		
 	</head>
@@ -21,7 +21,7 @@
 
 				<div class="mt-5 contacto">
 
-				  <h2 class="offset-1 col-10 fs-1 text-center"><strong> Crear capacitacion </strong></h2>
+				  <h2 class="offset-1 col-10 fs-1 text-center"><strong> Crear Pago </strong></h2>
 				  
 				  <form id="form-pago" action="${pageContext.request.contextPath}/pagos/createPago"  method="POST" class="mx-auto col-10 offset-1 col-sm-12 col-md-11 mb-2 mt-3">
 					 

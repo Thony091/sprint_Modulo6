@@ -16,76 +16,66 @@
 	    <!-- End Navbar -->
 	    
 		<div class="container mt-5">
-			<!-- Codigo formulario Capacitacion -->
+			<!-- Codigo formulario Revision -->
 			<main class="row mt-3 mb-5 " >
 
 				<div class="mt-5 contacto">
 
-				  <h2 class="offset-1 col-10 fs-1 text-center"><strong> Crear Visita </strong></h2>
+				  <h2 class="offset-1 col-10 fs-1 text-center"><strong>Ingresar Revision</strong></h2>
 				  
 				  <form id="form-pago" action="${pageContext.request.contextPath}/crear-revision"  method="POST" class="mx-auto col-10 offset-1 col-sm-12 col-md-11 mb-2 mt-3">
 					 
 					<div class="form-group fs-3 mt-4">
-						<label for="rutCliente">Rut Cliente:</label>
-						<select id="rutCliente" name="rutCliente" class="form-select" aria-label="Default select example" required>
+						<label for="id">Rut Cliente:</label>
+						<select id="id" name="id" class="form-select" aria-label="Default select example" required>
 							<option value="" selected disabled>Elegir un rut de Cliente</option>
-							<core:forEach var="usu" items="${usuarios}">
-								<option value="${usu.getRun()}">${usu.getRun()}</option>
+							<core:forEach var="vis" items="${visitas}">
+								<option value="${vis.getId()}">${vis.getRutCliente()}</option>
 					 		</core:forEach>
 						</select>
 						<small id="rutClienteHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
 					</div>
 		  
 					<div class="form-group fs-3 mt-4">
-					  <label for="dia">Día: </label>
+					  <label for="nombreVisita">Nombre de Visita(alusivo): </label>
 					  <input 
-						  name="dia"
+						  name="nombreVisita"
 						  class="form-control fs-4" 
 						  type="text" 
-						  id="dia"
+						  id="nombreVisita"
 						   />		  
-					  <small id="diaHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
+					  <small id="nombreVisitaHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
 					</div> 
 					<div class="form-group fs-3 mt-4">
-					  <label for="hora">Hora: </label>
+					  <label for="detalle">Detalle: </label>
 					  <input 
-						  name="hora"
+						  name="detalle"
 						  class="form-control fs-4" 
 						  type="text" 
-						  id="hora"
+						  id="detalle"
 						   />		  
-					  <small id="horaHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
+					  <small id="detalleHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
 					</div> 
 					<div class="form-group fs-3 mt-4">
-					  <label for="lugar">Lugar: </label>
-					  <input 
-						  name="lugar"
-						  class="form-control fs-4" 
-						  type="text" 
-						  id="lugar"
-						   />		  
-					  <small id="lugarHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
-					</div> 
-					<div class="form-group fs-3 mt-4">
-					  <label for="comentarios">Comentarios: </label>
-					  <input 
-						  name="comentarios"
-						  class="form-control fs-4" 
-						  type="text" 
-						  id="comentarios"
-						   />		  
-					  <small id="comentariosHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
-					</div> 
+					  <label for="estado">Estado: </label>
+						<select id="estado" name="estado" class="form-select" aria-label="Default select example" required>
+							<option value="" selected disabled>Elegir un estado</option>
+							<option value="Sin Problemas">Sin Problemas</option>
+							<option value="Con Observaciones">Con Observaciones</option>
+							<option value="No aprueba">No aprueba</option>
+						</select>
+					  <small id="estadoHelp" class=" form-text text-danger" style="display:none;">El campo no puede estar vacio.</small>
+					</div> 					
 		  
 		  			<div>
-					  <button class="btn btn-primary btn-block mt-4 fs-3 m-3" type="submit" >Registrar Pago</button>
+					  <button class="btn btn-primary btn-block mt-4 fs-3 m-3" type="submit" >Ingresar</button>
 					  <small id="finalHelp" class="form-text text-danger"> </small>
 		  			</div>
 				  </form>
 
 				</div>
 			  </main>
-			  <!-- Fin Codigo formulario Capacitacion -->
+			  <!-- Fin Codigo formulario Revision -->
 				 		  
 		</div>
 		

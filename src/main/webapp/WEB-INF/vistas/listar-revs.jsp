@@ -1,4 +1,4 @@
-<%@page import="tech.awakelab.jpapreventionsprint.models.Usuario"%>
+<%@page import="tech.awakelab.jpapreventionsprint.models.Revision"%>
 <%@page import="java.util.List"%>
 <%@page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
@@ -11,7 +11,7 @@
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
 	rel="stylesheet">
-<title>Listar Visitas</title>
+<title>Listar Revisiones</title>
 <link rel="stylesheet" href="<c:url value="/res/css/styles.css" />">
 <!-- Font Awesome -->
 <link rel="stylesheet"

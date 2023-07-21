@@ -27,7 +27,7 @@
 
 	<div class="container mt-5">
 		<div class="row ">
-			<h1 class="text-center">Listado Usuarios</h1>
+			<h1 class="text-center">Listado de Pagos</h1>
 
 
 			<!-- Tabla -->

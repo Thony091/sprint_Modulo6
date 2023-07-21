@@ -67,10 +67,10 @@
 					</div>
 				</div>
 				<div class="card col-xs-12 col-sm-6 col-md-3" >
-					<img src="https://www.enel.cl/content/dam/enel-cl/es/personas/informacion-de-utilidad/tecnicos-en-terreno/P-IU-PersonalTerreno-TecnicoLector-500x500-20SEP.png" class="card-img-top" alt="escritorio con hojas y checks">
+					<img src="https://img.freepik.com/vector-premium/sistema-gestion-ambiental-green-factory-mejora-medio-ambiente-industrial-iso-14000_255805-420.jpg?w=2000" class="card-img-top" alt="escritorio con hojas y checks">
 					<div class="card-body">							
 						<p class="card-text">Registro de Revisiones de Visitas</p> 							
-						<a href="${pageContext.request.contextPath}/revisiones" class="btn btn-primary d-grid gap-2 mt-3">Listar Revisiones</a>
+						<a href="${pageContext.request.contextPath}/revs" class="btn btn-primary d-grid gap-2 mt-3">Listar Revisiones</a>
 					</div>
 				</div>
 					

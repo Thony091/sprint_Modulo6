@@ -79,7 +79,7 @@
 					</div> 
 		  
 		  			<div>
-					  <button class="btn btn-primary btn-block mt-4 fs-3 m-3" type="submit" >Registrar Pago</button>
+					  <button class="btn btn-primary btn-block mt-4 fs-3 m-3" type="submit" >Registrar</button>
 					  <small id="finalHelp" class="form-text text-danger"> </small>
 		  			</div>
 				  </form>

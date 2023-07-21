@@ -35,7 +35,7 @@ public class Revision {
 	}
 	
 	@ManyToOne
-	@JoinColumn(name="rev_visita")
+	@JoinColumn(name="id_visita")
 	private Visita visita;
 
 	public int getId() {

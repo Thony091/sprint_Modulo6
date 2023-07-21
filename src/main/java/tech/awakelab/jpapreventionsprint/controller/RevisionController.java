@@ -21,10 +21,10 @@ public class RevisionController {
 	@Autowired
 	VisitaService vs;
 	
-	@RequestMapping(name="/revisiones", method = RequestMethod.GET)
+	@RequestMapping(value="/revs", method = RequestMethod.GET)
 	public ModelAndView mostrarRevisiones() {
 		List<Revision> revisiones = rs.getAllRevisiones();
-		return new ModelAndView("listar-revisiones","revisiones",revisiones);
+		return new ModelAndView("listar-revs","revisiones",revisiones);
 	}
 	
 	@RequestMapping(value="/nueva-revision", method = RequestMethod.GET)
@@ -36,7 +36,7 @@ public class RevisionController {
 	@RequestMapping(value = "/crear-revision", method = RequestMethod.POST)
 	public String saveRevision(Revision revision) {
 			rs.saveRevision(revision);		
-	    return "redirect:/revisiones"; // Redirigir al listado de revisiones
+	    return "redirect:/revs"; // Redirigir al listado de revisiones
 	} 
 	
 }
