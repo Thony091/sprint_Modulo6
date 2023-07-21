@@ -2,6 +2,7 @@ package tech.awakelab.jpapreventionsprint.models;
 
 import java.util.Date;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -32,7 +33,7 @@ public class Administrativo {
 		createAt = new Date();
 	}
 	
-	@OneToOne
+	@OneToOne(cascade= CascadeType.ALL)
     private Usuario usuario;
 
 	public int getIdAdministrativo() {

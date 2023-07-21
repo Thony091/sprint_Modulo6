@@ -22,7 +22,7 @@ public class AdministrativoService {
 		administrativoRepository.save(administrativo);
 	}
 	
-	public List<Administrativo> getAllProfesional() {
+	public List<Administrativo> getAllAdministrativos() {
 		return  administrativoRepository.findAll();
 	}
 	

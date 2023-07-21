@@ -28,24 +28,24 @@
 		<div class="row ">
 			<h1 class="text-center">Listado Usuarios</h1>
 
-			<div>
-				<form action="ServletCrudUsuario" method="GET"
-					class="offset-1 col-10 form mb-5 mt-3">
-					<select id="tipoUsuario" name="tipoUsuario"
-						class="form-select mb-3" aria-label="Default select example"
-						onchange="enviar-formulario" required>
-						<option value="" selected disabled>Elegir un Tipo de
-							Usuario</option>
-						<option value="Cliente">Cliente</option>
-						<option value="Profesional">Profesional</option>
-						<option value="Administrativo">Administrativo</option>
-					</select> <input type="hidden" name="opcion" value="listarUsuarios">
-					<div>
-						<button type="submit"
-							class="btn btn-primary btn-block  fs-4 col-12">Filtrar</button>
-					</div>
-				</form>
-			</div>
+<!-- 			<div> -->
+<%-- 				<form action="${pageContext.request.contextPath}/lista-tipos-usuarios" method="GET" --%>
+<!-- 					class="offset-1 col-10 form mb-5 mt-3"> -->
+<!-- 					<select id="tipoUsuario" name="tipoUsuario" -->
+<!-- 						class="form-select mb-3" aria-label="Default select example" -->
+<!-- 						onchange="enviar-formulario" required> -->
+<!-- 						<option value="" selected disabled>Elegir un Tipo de -->
+<!-- 							Usuario</option> -->
+<!-- 						<option value="Cliente">Cliente</option> -->
+<!-- 						<option value="Profesional">Profesional</option> -->
+<!-- 						<option value="Administrativo">Administrativo</option> -->
+<!-- 					</select> -->
+<!-- 					<div> -->
+<!-- 						<button type="submit" -->
+<!-- 							class="btn btn-primary btn-block  fs-4 col-12">Filtrar</button> -->
+<!-- 					</div> -->
+<!-- 				</form> -->
+<!-- 			</div> -->
 			<!-- Tabla -->
 			<table class="table table-striped table-hover">
 				<thead class="table-dark">
@@ -83,7 +83,7 @@
 
 		<div class="row">
 			<div class="col d-flex justify-content-around">
-				<a class="btn btn-success" href="crearUsuario.jsp"><i
+				<a class="btn btn-success" href="${pageContext.request.contextPath}/createForm"><i
 					class="mx-1 fa-solid fa-plus"></i>Crear Nuevo Usuario</a>
 			</div>
 		</div>

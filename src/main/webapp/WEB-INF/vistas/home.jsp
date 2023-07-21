@@ -39,7 +39,7 @@
 					<img src="https://cdn-icons-png.flaticon.com/512/306/306232.png" class="card-img-top" alt="Celular con carta de mensaje">
 					<div class="card-body">							
 						<p class="card-text">Administración de usuarios.</p>
-						<a href="${pageContext.request.contextPath}/listar-usuarios" class="btn btn-primary d-grid gap-2">Listar Usuarios</a>							
+						<a href="${pageContext.request.contextPath}/lista-usuarios" class="btn btn-primary d-grid gap-2">Listar Usuarios</a>							
 						<a href="${pageContext.request.contextPath}/createForm" class="btn btn-primary d-grid gap-2 mt-3">Crear Usuarios</a>							
 					</div>						
 				</div>

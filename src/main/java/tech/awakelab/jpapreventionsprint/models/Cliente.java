@@ -3,8 +3,10 @@ package tech.awakelab.jpapreventionsprint.models;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -39,10 +41,10 @@ public class Cliente {
 		createAt = new Date();
 	}
 	
-	@OneToOne
+	@OneToOne(cascade= CascadeType.ALL)
     private Usuario usuario;
 	
-	@OneToMany(mappedBy = "cliente")
+	@OneToMany(fetch=FetchType.EAGER, mappedBy = "cliente")
 	private List<Capacitacion> capacitacion;
 
 	public String getRut() {

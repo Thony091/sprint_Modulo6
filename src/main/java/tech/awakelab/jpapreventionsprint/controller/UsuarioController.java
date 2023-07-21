@@ -34,9 +34,9 @@ public class UsuarioController {
 	AdministrativoService 	as;	
 	
 	@RequestMapping(value="/lista-usuarios", method = RequestMethod.GET)
-	public ModelAndView showAllUsers() {
-		List<Usuario> usuarios = us.getAllUsers();
-		return new ModelAndView("listar-usuarios", "usuarios", usuarios);
+	public ModelAndView showAllUsers() {		
+			List<Usuario> usuarios = us.getAllUsers();
+			return new ModelAndView("listar-usuarios", "usuarios", usuarios);		
 	}
 	
 	@RequestMapping(value="/createForm", method = RequestMethod.GET)
