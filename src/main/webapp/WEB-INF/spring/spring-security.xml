@@ -11,7 +11,26 @@
         
       <http auto-config="true">
         	<intercept-url pattern="/" access="permitAll"/>
-        	<intercept-url pattern="/capacitacion/new" access="('Cliente')"/>
+	<!--Espacio solo permitido solo para usuarios tipo Cliente -->
+        	<intercept-url pattern="/capacitacion/new" access="hasAnyAuthority('Cliente')"/>
+        	<intercept-url pattern="/capacitacion/save" access="hasAnyAuthority('Cliente')"/>
+        	<intercept-url pattern="/capacitaciones" access="hasAnyAuthority('Cliente')"/>
+        	<intercept-url pattern="/contacto" access="hasAnyAuthority('Cliente')"/>
+        	<intercept-url pattern="/contacto/save" access="hasAnyAuthority('Cliente')"/>
+	<!--Espacio solo permitido solo para usuarios tipo Administrativo -->
+        	<intercept-url pattern="/lista-usuarios" access="hasAnyAuthority('Administrativo')"/>
+        	<intercept-url pattern="/createForm" access="hasAnyAuthority('Administrativo')"/>
+        	<intercept-url pattern="/create-user" access="hasAnyAuthority('Administrativo')"/>
+        	<intercept-url pattern="/listar-pagos" access="hasAnyAuthority('Administrativo')"/>
+        	<intercept-url pattern="/formulario-pago" access="hasAnyAuthority('Administrativo')"/>
+        	<intercept-url pattern="/createPago" access="hasAnyAuthority('Administrativo')"/>
+	<!--Espacio solo permitido solo para usuarios tipo Profesional -->
+        	<intercept-url pattern="/listar-visitas" access="hasAnyAuthority('Profesional')"/>
+        	<intercept-url pattern="/nueva-visita" access="hasAnyAuthority('Profesional')"/>
+        	<intercept-url pattern="/crear-visita" access="hasAnyAuthority('Profesional')"/>
+        	<intercept-url pattern="/revs" access="hasAnyAuthority('Profesional')"/>
+        	<intercept-url pattern="/nueva-revision" access="hasAnyAuthority('Profesional')"/>
+        	<intercept-url pattern="/crear-revision" access="hasAnyAuthority('Profesional')"/>
         	
 <!--         	<intercept-url pattern="/api/*" access="hasAnyAuthority('ADMIN')"/> -->
         

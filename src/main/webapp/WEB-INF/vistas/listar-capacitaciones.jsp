@@ -46,7 +46,7 @@
 		        
 		 		<core:forEach var="cap" items="${capacitaciones}">
 		        <tr>
-		          <td><core:out value="${cap.getRutCliente()}"></core:out></td>
+		          <td><core:out value="${cap.getCliente().getRut}"></core:out></td>
 		          <td><core:out value="${cap.getDia()}"></core:out></td>
 		          <td><core:out value="${cap.getHora()}"></core:out></td>
 		          <td><core:out value="${cap.getLugar()}"></core:out></td>
